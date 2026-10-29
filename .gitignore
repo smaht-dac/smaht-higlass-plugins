@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.tgz
+.DS_Store
+npm-debug.log
+# Vitest browser mode failure screenshots
+__screenshots__/
+.vitest-attachments/
+# Local data that must not be checked in
+/data/

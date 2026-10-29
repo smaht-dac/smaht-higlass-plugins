@@ -1,0 +1,52 @@
+{
+  "name": "smaht-higlass-plugins",
+  "version": "0.1.0",
+  "description": "HiGlass plugin tracks for the SMaHT data portal",
+  "license": "MIT",
+  "author": "SMaHT Data Analysis Center",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smaht-dac/smaht-higlass-plugins"
+  },
+  "keywords": ["higlass", "plugin", "tracks", "genomics", "smaht"],
+  "type": "module",
+  "main": "./dist/smaht-higlass-plugins.js",
+  "module": "./dist/smaht-higlass-plugins.js",
+  "exports": {
+    ".": "./dist/smaht-higlass-plugins.js"
+  },
+  "files": ["dist"],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "test": "vitest run",
+    "test-watch": "vitest watch",
+    "lint": "biome ci",
+    "format": "biome format --write"
+  },
+  "dependencies": {
+    "@gmod/indexedfasta": "^5.0.11",
+    "@gmod/vcf": "^7.2.0",
+    "generic-filehandle2": "^2.5.0",
+    "higlass-text": "^1.0.1"
+  },
+  "peerDependencies": {
+    "higlass": "^2.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@vitest/browser-playwright": "^4.1.12",
+    "higlass": "^2.3.5",
+    "jsdom": "^26.1.0",
+    "pixi.js": "^6.5.10",
+    "playwright": "~1.64.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^7.3.1",
+    "vitest": "^4.1.12"
+  }
+}

@@ -1,0 +1,14 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##FILTER=<ID=LowEvidence,Description="Low evidence">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Depth">
+##INFO=<ID=SOMATIC,Number=0,Type=Flag,Description="Somatic variant">
+##contig=<ID=chr1,length=2500>
+##contig=<ID=chr2,length=1500>
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+chr2	50	.	AT	A	.	PASS	DP=7
+chr1	100	rs1	C	T	50	PASS	DP=10;SOMATIC
+chr1	200	.	G	A	.	PASS	DP=5
+1	300	.	A	C,G	.	LowEvidence	DP=3
+chrUn	10	.	C	T	.	PASS	.
+chr2	1400	.	C	T	.	PASS	.
